@@ -1,4 +1,10 @@
-extends blocks/_layout
-
 append content
-
+    -
+        var links = [
+        'home.html'
+        ]
+    .box(style="color: #333")
+        ul
+            each item in links
+                li
+                    a(href=item)=item
