@@ -11,6 +11,7 @@
   "devDependencies": {
     "browser-sync": "^2.24.6",
     "del": "^3.0.0",
+    "fancybox": "^3.0.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-cache": "^1.0.2",
@@ -21,6 +22,17 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
     "gulp-uglifyjs": "^0.6.2",
-    "imagemin-pngquant": "^6.0.0"
+    "hamburgers": "^0.9.3",
+    "imagemin-pngquant": "^6.0.0",
+    "jquery.mmenu": "^7.0.6",
+    "nouislider": "^11.1.0"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.3.5",
+    "animate.css": "^3.7.0",
+    "masonry-layout": "^4.2.2",
+    "owl.carousel": "^2.3.4",
+    "responsive-tabs": "^1.6.3",
+    "slick-carousel": "^1.8.1"
   }
 }
