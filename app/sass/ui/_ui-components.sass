@@ -1,5 +1,9 @@
 body
   margin: 0
+  font-weight: normal
+  font-size: 16px
+  letter-spacing: -0.2px
+  color: #000000
 
   & *
     margin: 0
@@ -9,6 +13,12 @@ body
     background-color: transparent
     box-sizing: border-box
 
+@media (min-width: 1025px)
+  body.compensate-for-scrollbar
+    position: static
+    width: auto
+
+
 a
   text-decoration: none
   transition: .3s
@@ -17,8 +27,26 @@ a
 ul
   list-style: none
 
+img
+  max-width: 100%
+
 button
   cursor: pointer
+
+label
+  cursor: pointer
+
+section
+  flex-grow: 1
+
+select, input, textarea
+  appearance: none
+  border-radius: 0px
+  background-color: transparent
+
+.omfgIOS
+  position: fixed
+  max-width: 100%
 
 .content-wrapper
   min-height: 100vh
@@ -33,7 +61,7 @@ button
 
 .box
   width: 100%
-  max-width: 1690px
+  max-width: 1101px
   display: flex
   margin: 0 auto
   flex-wrap: wrap

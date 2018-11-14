@@ -6,12 +6,16 @@ var gulp         = require('gulp'),
     uglify       = require('gulp-uglifyjs'),
     cssnano      = require('gulp-cssnano'),
     rename       = require('gulp-rename'),
+    cleanCSS     = require('gulp-clean-css'),
+    csso         = require('gulp-csso'),
     del          = require('del'),
     cache        = require('gulp-cache'),
+    plumber      = require('gulp-plumber'),
     autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function(){
     return gulp.src('app/sass/*.sass')
+      .pipe(plumber())
       .pipe(sass())
       .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
       .pipe(gulp.dest('app/css/'))
@@ -20,6 +24,7 @@ gulp.task('sass', function(){
 
 gulp.task('pug', function(){
   return gulp.src('app/pug/*.pug')
+    .pipe(plumber())
     .pipe(pug({
         pretty: true
     }))
@@ -76,6 +81,8 @@ gulp.task('clean', function() {
 gulp.task('build', ['clean', 'pug', 'sass', 'scripts'], function() {
 
   var buildCss = gulp.src('app/css/**/*.css')
+    .pipe(csso())
+    .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('dist/css'))
 
   var buildFonts = gulp.src('app/fonts/**/*')
