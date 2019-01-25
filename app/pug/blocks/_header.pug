@@ -8,8 +8,8 @@ header.header
                 a.header__where(href='')
                     img(src='img/header/Union.svg')
                     span Где купить?
-                a.header__cabinet(href='')
-                    img(src='img/header/logo-cabinet.svg')
+                a.header__cabinet.active(href='')
+                    img.active(src='img/header/logo-cabinet.svg')
                     span Личный кабинет дистрибьютора
                 a.header__question(href='')
                     span Задать впорос
@@ -17,7 +17,6 @@ header.header
                     select.header__languages-select
                         option.header__languages-option RU
                         option.header__languages-option EN
-                    //img(src='img/header/Polygon.jpg')
             .header__nav-bottom
                 nav
                     ul.header__nav-bottom-ul

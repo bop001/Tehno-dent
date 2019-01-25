@@ -105,6 +105,68 @@ select, input, textarea {
   display: flex;
   margin: 0 -15px; }
 
+.footer {
+  height: 158px;
+  background: #B8B8B8;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+  .footer__logo {
+    width: 131px;
+    height: 131px; }
+  .footer__info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .footer__address div {
+    font-size: 16px; }
+  .footer__languages {
+    background: url(../img/header/Polygon-footer.png) no-repeat;
+    background-position-y: 15px;
+    background-position-x: 86px; }
+    .footer__languages-option {
+      font-size: 14px; }
+    .footer__languages-select {
+      max-width: 106px;
+      max-height: 40px;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      border: 1px solid #000;
+      padding: 9px 67px 10px 15px;
+      cursor: pointer; }
+  .footer .fab.fa-facebook-f {
+    color: #FE7E0D; }
+  .footer__contacts {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .footer__contacts .e-mail {
+      font-size: 16px; }
+    .footer__contacts .phone {
+      font-size: 20px; }
+      .footer__contacts .phone span {
+        font-weight: bold; }
+
 .container {
   max-width: 1242px;
   display: -webkit-box;
@@ -201,16 +263,18 @@ select, input, textarea {
     line-height: 19px; }
 
 .header__languages {
-  background: url(../img/header/Polygon.jpg) no-repeat;
+  background: url(../img/header/Polygon-header.png) no-repeat;
   background-position-y: 15px;
   background-position-x: 86px; }
+  .header__languages__languages-option {
+    font-size: 14px; }
   .header__languages-select {
     max-width: 106px;
     max-height: 40px;
     -webkit-border-radius: 3px;
             border-radius: 3px;
     border: 1px solid #000;
-    padding: 9px 71px 10px 15px;
+    padding: 9px 67px 10px 15px;
     cursor: pointer; }
 
 .header__nav-bottom-ul {
