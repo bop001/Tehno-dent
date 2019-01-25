@@ -67,7 +67,7 @@ gulp.task('scripts', function(){
       'node_modules/nouislider/distribute/nouislider.js',
       'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
       "node_modules/responsive-tabs/js/jquery.responsiveTabs.js",
-      'node_modules/slick-carousel/slick/slick.js'
+      'node_modules/slick-carousel/slick/slick.js',
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

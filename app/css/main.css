@@ -137,7 +137,7 @@ select, input, textarea {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-left: 58px;
-  max-height: 230px; }
+  height: 230px; }
 
 .header__nav-top {
   display: -webkit-box;
@@ -200,21 +200,18 @@ select, input, textarea {
     font-size: 14px;
     line-height: 19px; }
 
-.header__languages-select {
-  max-width: 106px;
-  max-height: 40px;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  border: 1px solid #000;
-  padding: 9px 71px 10px 15px;
-  position: relative; }
-  .header__languages-select::after {
-    content: '';
-    position: absolute;
-    left: 20px;
-    bottom: -20px;
-    border: 10px solid transparent;
-    border-top: 10px solid green; }
+.header__languages {
+  background: url(../img/header/Polygon.jpg) no-repeat;
+  background-position-y: 15px;
+  background-position-x: 86px; }
+  .header__languages-select {
+    max-width: 106px;
+    max-height: 40px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    border: 1px solid #000;
+    padding: 9px 71px 10px 15px;
+    cursor: pointer; }
 
 .header__nav-bottom-ul {
   display: -webkit-box;
@@ -232,6 +229,37 @@ select, input, textarea {
   line-height: normal;
   font-size: 14px;
   text-transform: uppercase; }
+  .header__nav-bottom-link span {
+    border-bottom: dotted; }
+
+.header__nav-bottom-search-main {
+  width: 50px;
+  height: 50px;
+  position: relative; }
+
+.header__nav-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0; }
+  .header__nav-bottom nav {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+
+.header__nav-bottom-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+  background: url(../img/header/search.png) 50% no-repeat; }
 
 html, body {
   width: 100%;

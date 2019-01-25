@@ -11,3 +11,5 @@ function preloader () {
         $('.loader-outer').fadeOut();
     });
 }
+
+

@@ -1,7 +1,8 @@
 header.header
     .container
         .header__logo
-            img(src='img/header/Logo-company.svg')
+            a(href='')
+                img(src='img/header/Logo-company.svg')
         .header__nav
             .header__nav-top
                 a.header__where(href='')
@@ -16,6 +17,7 @@ header.header
                     select.header__languages-select
                         option.header__languages-option RU
                         option.header__languages-option EN
+                    //img(src='img/header/Polygon.jpg')
             .header__nav-bottom
                 nav
                     ul.header__nav-bottom-ul
@@ -38,8 +40,8 @@ header.header
                             a.header__nav-bottom-link(href='')
                                 span О компании
                 form.header__nav-bottom-search-main
-                    input.header__nav-bottom-input
-                    button.header__nav-bottom-button
+                    input(type='search' name="search-header").header__nav-bottom-input
+                    button(type='submit').header__nav-bottom-button
 
 
 
