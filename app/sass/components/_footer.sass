@@ -33,9 +33,50 @@
       border: 1px solid #000
       padding: 9px 67px 10px 15px
       cursor: pointer
+      
+  &__link
+
+
+  .fab.fa-facebook-f,
+  .fab.fa-vk,
+  .fab.fa-odnoklassniki,
+  .fab.fa-instagram
+    color: #FE7E0D
+    font-size: 20px
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    background: #fff
+    margin: 0 6.5px
+    position: relative
 
   .fab.fa-facebook-f
-    color: #FE7E0D
+
+    &::before
+      position: absolute
+      top: 10px
+      left: 15px
+
+  .fab.fa-vk
+
+    &::before
+      position: absolute
+      top: 10px
+      left: 9px
+
+  .fab.fa-odnoklassniki
+
+    &::before
+      position: absolute
+      top: 10px
+      left: 14px
+
+  .fab.fa-instagram
+
+    &::before
+      position: absolute
+      top: 10px
+      left: 11.5px
 
   &__contacts
     display: flex

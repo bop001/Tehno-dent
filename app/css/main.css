@@ -148,8 +148,35 @@ select, input, textarea {
       border: 1px solid #000;
       padding: 9px 67px 10px 15px;
       cursor: pointer; }
-  .footer .fab.fa-facebook-f {
-    color: #FE7E0D; }
+  .footer .fab.fa-facebook-f,
+  .footer .fab.fa-vk,
+  .footer .fab.fa-odnoklassniki,
+  .footer .fab.fa-instagram {
+    color: #FE7E0D;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background: #fff;
+    margin: 0 6.5px;
+    position: relative; }
+  .footer .fab.fa-facebook-f::before {
+    position: absolute;
+    top: 10px;
+    left: 15px; }
+  .footer .fab.fa-vk::before {
+    position: absolute;
+    top: 10px;
+    left: 9px; }
+  .footer .fab.fa-odnoklassniki::before {
+    position: absolute;
+    top: 10px;
+    left: 14px; }
+  .footer .fab.fa-instagram::before {
+    position: absolute;
+    top: 10px;
+    left: 11.5px; }
   .footer__contacts {
     display: -webkit-box;
     display: -webkit-flex;
