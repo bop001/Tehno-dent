@@ -1,4 +1,47 @@
 header.header
-    .header__topline
+    .container
+        .header__logo
+            img(src='img/header/Logo-company.svg')
+        .header__nav
+            .header__nav-top
+                a.header__where(href='')
+                    img(src='img/header/Union.svg')
+                    span Где купить?
+                a.header__cabinet(href='')
+                    img(src='img/header/logo-cabinet.svg')
+                    span Личный кабинет дистрибьютора
+                a.header__question(href='')
+                    span Задать впорос
+                .header__languages
+                    select.header__languages-select
+                        option.header__languages-option RU
+                        option.header__languages-option EN
+            .header__nav-bottom
+                nav
+                    ul.header__nav-bottom-ul
+                        li.header__nav-bottom-li
+                            a.header__nav-bottom-link(href='')
+                                span Продукция
+                        li.header__nav-bottom-li
+                            a.header__nav-bottom-link(href='')
+                                span Обучение
+                        li.header__nav-botto-_li
+                            a.header__nav-bottom-link(href='')
+                                span Новости и события
+                        li.header__nav-bottom-li
+                            a.header__nav-bottom-link(href='')
+                                span Документы
+                        li.header__nav-bottom-li
+                            a.header__nav-bottom-link(href='')
+                                span Контакты
+                        li.header__nav-bottom-li
+                            a.header__nav-bottom-link(href='')
+                                span О компании
+                form.header__nav-bottom-search-main
+                    input.header__nav-bottom-input
+                    button.header__nav-bottom-button
+
+
+
         
 
